@@ -1,10 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+
 export const initialState = {
-    id: '',
-    enunciado: '',
-    estado: ''
-}
+    id: 'ffasdf',
+    enunciado: 'asdfasf',
+    estado: 'adsfsadf'
+};
 
 export const questionSlice = createSlice({
   name: 'question',
@@ -13,8 +14,8 @@ export const questionSlice = createSlice({
     onAddNewNote: (state, {payload}) => {
 
     },
-    onDeleteNote: (state, {payload}) => {
-
+    onDeleteNote: (state) => {
+      state = initialState;
     }
   }
 });
