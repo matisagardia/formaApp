@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.buttonsContainer {
+    width: 500px;
+    height: 50px;
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+        .logo {
+            height: 40px;
+            width: 40px;
+            margin-left: 20px;
+        }
+        button {
+            height: 20px;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        button:hover {
+            text-decoration: underline;
+        }
+}
+
+.questionsContainer{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 400px;
+    h5{
+        font-weight: 100;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+     p{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        font-weight: bold;
+     }
+}
+
+ul {
+    li {
+        border-bottom: 1px solid black;
+    }
+}
+
+.createQuestionBox {
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    hr {
+        width: 200px;
+    }
+    .questionStateBox{
+        display: flex;
+        gap: 15px;
+    }
+    #questionState {
+        width: 130px;
+    }
+    .enunciado {
+        font-size: 1.5rem;
+    }
+     h3{
+        font-size: 1.5rem;
+        font-weight: 200;
+     }
+     h4{
+        font-size: 1.5rem;
+        font-weight: 200;
+     }
+}
