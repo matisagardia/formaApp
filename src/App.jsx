@@ -1,17 +1,13 @@
 
-import { CreateQuestion } from './components/CreateQuestion'
-import { NavBar } from './components/NavBar'
-import { QuestionList } from './components/QuestionList'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRouter } from './router/AppRouter'
 
 export const App = () => {
 
   return (
-    <>
-
-      <NavBar/>
-      <QuestionList/>
-      <CreateQuestion />
-    </>
+    <BrowserRouter>
+      <AppRouter/>
+    </BrowserRouter>
   )
 }
 

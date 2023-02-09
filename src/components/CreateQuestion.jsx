@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavBar } from './NavBar'
 
 export const CreateQuestion = () => {
 
@@ -6,7 +7,9 @@ export const CreateQuestion = () => {
   return (
     <>
 
-        <div className="createQuestionBox">
+    <NavBar />
+
+        <div className="createQuestionBox" id='createQuestionBox'>
             <h3>Crear pregunta</h3>
             <hr />
             <div className="questionStateBox">

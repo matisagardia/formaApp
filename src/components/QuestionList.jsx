@@ -1,8 +1,11 @@
 import React from 'react'
+import { NavBar } from './NavBar'
 
 export const QuestionList = () => {
   return (
     <>
+
+    <NavBar />
 
         <div className="questionsContainer">
             <h5>Listado de preguntas</h5>

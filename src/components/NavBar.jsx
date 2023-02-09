@@ -1,7 +1,11 @@
 import React from 'react'
 import logo from '../assets/formaAppLogo.png'
+import { CreateQuestion } from './CreateQuestion'
+import { QuestionList } from './QuestionList'
 
 export const NavBar = () => {
+
+
   return (
     <>
 
