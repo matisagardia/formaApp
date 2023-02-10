@@ -1,13 +1,13 @@
 import React from 'react'
-import { useStore } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { NavBar } from './NavBar'
 
 export const QuestionList = () => {
 
-  const {id, enunciado, estado} = useStore();
+  const {questions} = useSelector( state => state.question );
 
-  console.log(id, enunciado, estado)
-
+  console.log(questions)
+  
   return (
     <>
 
@@ -17,13 +17,15 @@ export const QuestionList = () => {
             <h5>Listado de preguntas</h5>
             <div className="questionsTable">
                 <div className="titles">
-                    <p>{id}</p>
-                    <p>{enunciado}</p>
-                    <p>{estado}</p>
-                    <p></p>
+                  <p>ID</p>
+                  <p>Enunciado</p>
+                  <p>Estado</p>
+                  <p>Accion</p>
                 </div>
                 <ul className="list">
-                    
+                  {questions.map((item, index) => (
+                    <li key={index} className='listItem'><p>{item.id}</p> <p className='itemText'>{item.enunciado}</p> <p>{item.estado}</p></li>
+                  ))}
                 </ul>
             </div>
         </div>

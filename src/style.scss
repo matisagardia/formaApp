@@ -58,8 +58,10 @@ ul {
 }
 
 .createQuestionBox {
+    margin-top: 10px;
+    margin-left: 120px;
     width: 230px;
-    height: 200px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -76,6 +78,7 @@ ul {
     }
     #questionState {
         width: 130px;
+        font-size: 1.2rem;
     }
     .enunciado {
         font-size: 1.5rem;
@@ -88,4 +91,28 @@ ul {
         font-size: 1.5rem;
         font-weight: 200;
      }
+}
+
+.oculto, .visible {
+    font-size: 1.2rem;
+}
+
+.listItem {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    gap: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.sendNote {
+    height: 25px;
+    width: 50px;
+    font-size: 1.5rem;
 }
