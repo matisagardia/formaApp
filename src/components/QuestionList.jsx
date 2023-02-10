@@ -24,7 +24,7 @@ export const QuestionList = () => {
                 </div>
                 <ul className="list">
                   {questions.map((item, index) => (
-                    <li key={index} className='listItem'><p>{item.id}</p> <p className='itemText'>{item.enunciado}</p> <p>{item.estado}</p></li>
+                    <li key={index} className='listItem'><p>{item.id}</p> <p className='itemText'>{item.enunciado}</p> <p>{item.estado}</p> <button className='eraseQuestion'>Borrar</button></li>
                   ))}
                 </ul>
             </div>
